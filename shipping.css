@@ -1,0 +1,93 @@
+
+
+#mainContainer{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+    column-gap:10px;
+   
+
+}
+
+.top-margin-1{
+    margin-top:20px;
+}
+
+.ship-info-content{
+     display: grid;
+     grid-template-columns:1fr 1fr;
+     column-gap:30px;
+     /* margin-top:40px; */
+     padding:20px 0px;
+     border:1px solid black;
+     
+}
+
+.ship-address{
+    border:1px solid black;
+    margin-left:10px;
+}
+
+.form-grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+   
+}
+
+
+.form-row{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+  
+   
+}
+/* 
+.rowspan{
+    grid-column:1/3;
+} */
+
+.s-input{
+    width:150px;
+    height:30px;
+    border-radius:5px;
+    border:2px solid black;
+    outline:none;
+}
+
+
+.full-input{
+    width:300px;
+    height:30px;
+    border-radius:5px;
+    border:2px solid black;
+    outline:none;
+}
+
+.ship-options{
+    border:1px solid black;
+    margin-right:10px;
+}
+
+.ship-options-wrapper{
+    margin:0 20px;
+    
+}
+
+.si-head{
+    text-align:center;
+}
+
+.so-inner{
+    border:1px solid black;
+}
+
+
+.item-summary-header{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+    height:40px;
+    padding:10px;
+    border-top:1px solid rgb(199, 201, 196);
+    border-bottom:1px solid rgb(199, 201, 196);
+    background-color: orangered;
+    color:white;
+}

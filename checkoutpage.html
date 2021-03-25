@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="checkout.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="checkout.js"></script>
+</head>
+<body>
+    <div class="mainCheckOutBox">
+        <div class="orderSummaryBox">
+            <div class="oshead-wrapper">
+                <div class="oshead-inner">
+                    <p>Order Summary<br> <span>1 item(s)</span></p>
+                   
+                   
+                </div>
+              
+            </div>
+            <div class="purchaseSummaryBox">
+               
+                    <div class="ps-top top-margin">
+                        <div class="amount-type">Subtotal</div>
+                        <div id="subtotal" class="amount">$48.99</div>
+                    </div>
+
+                    <div class="ps-top top-margin">
+                        <div class="amount-type">Sales Tax</div>
+                        <div id="tax"  class="amount" >$00.00</div>
+                    </div>
+
+                    <div class="ps-top top-margin">
+                        <div class="amount-type ">Total</div>
+                        <div id="total" class="amount">$48.99</div>
+                    </div>
+
+
+               
+               
+                <p>or 4 payments of 12.25 by <span><img src="" alt=""></span></p>
+                <div class="applyBox">
+                    <div class="promoCodeBox">
+                        <input type="search" placeholder="Enter your promo code here">
+                    </div>
+                    <div class="apply-btn"><a href="">Apply</a></div>
+    
+                </div>
+    
+                <div class="checkoutBox top-margin">
+                    <div class="cb-inner">
+                        <a href="shipping.html">checkout</a>
+                    </div>
+    
+                </div>
+                <!-- <div class="paywithBox"><p>or pay with</p></div>
+                <div class="pay-mode"><img class="paymode-logo" src="" alt=""></div>
+                <div class="pay-mode"><img class="paymode-logo" src="" alt=""></div> -->
+            </div>
+    
+        </div>
+        <div class="itemSummaryBox">
+            <div class="item-summary-header">
+                <div>ITEM(S)</div>
+                <div>QUANTITY/UNIT PRICE</div>
+                <div>DELIVERY/PICKUP</div>
+                <div>TOTAL PRICE</div>
+              
+            </div>
+            <div class="item-summary-wrapper">
+                <div class="col-grid">
+                    <div class="delivery-item"><img src="Images/thumb-image1.jpg" alt=""></div>
+                    <div class="col-rowgrids">
+                        <div id="co-item-name">Black Still water</div>
+                        <div class="col-1-colgrids">
+                            <div id="co-item-style"><b>Style:</b>3K001154</div>
+                            <div id="co-item-color"><b>Color:</b>Camel</div>
+                            <div id="co-item-size"><b>Size:</b>3T</div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="row-grid">
+                    <div class="col-grid">
+                        <div class="item-qty"><select name="" id="">
+                            <option id="co-item-qty" value="">1</option>
+                          
+                        </select></div>
+                        <div class="col-rowgrids" >
+                           
+                            <div>UNIT PRICE</div>
+                            <div id="co-item-price">$48.99</div>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row-grid">
+                    <div> <input type="radio" selected>Ship to Me</div>
+                    <div> <input type="radio">In store Pickup</div>
+                    <div> <input type="radio">Curbside Pickup</div>
+                </div>
+                <div class="row-grid">
+                    <div id="co-item-total"><strong>$48.99</strong></div>
+                   
+                </div>
+              
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+</html>

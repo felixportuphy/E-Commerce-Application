@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+   
+   
+</head>
+<body>
+   <section id="nav-bar">
+     <header id="nav-header">
+		<div id="logo"><img src="Images/cd-logo.svg" alt="Homepage"></div>
+
+		<!-- <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0"><img src="Images/cd-hamburger-menu.svg" alt=""></a></div> -->
+		<div id="cd-cart-trigger"><a class="cd-img-replace" href="#0"><img src="Images/cd-cart.svg" alt=""></a></div>
+	 </header>
+
+	 <nav id="main-nav">
+		<ul>
+			<li><a href="#0">Home</a></li>
+			<li><a href="#0">About</a></li>
+			<li><a class="current" href="#0">Services</a></li>
+			<li><a href="#0">Gallery</a></li>
+            <li><a href="#0">Contact</a></li>
+           
+        </ul>
+         <div class="searchBox"><input type="search"></div>
+	 </nav>
+
+    </section>
+
+    <div class="discount-popup-box">
+        <div class="empty-box"></div>
+        <div class="dicount-inner">
+            <p>Get a discount of 50%</p>
+            <input type="text">
+            <input type="text">
+            <button type="submit"></button>
+        </div>
+
+    </div>
+  
+    <section class="mainContainer">
+        <div id="product-nav">
+            <a href="">Home</a>
+            <a href="">Sale</a>
+            <a href="">Kids</a>
+            <a href="">Boys</a>
+        </div>
+        <div class="productContainer">
+            <div class="thumbBox Boxes">
+                <div id="thumbImagesBox">
+                    <img id="thumb-image-1" src="Images/thumb-image1.jpg" alt=""><br>
+                    <img id="thumb-image-2" src="Images/thumb-image2.jpg" alt=""><br>
+                    <img id="thumb-image-3" src="Images/thumb-image3.jpg" alt="">
+                </div>
+              
+            </div>
+            <div class="productBox Boxes">
+                <img id=image-1" class="slides" src="Images/product-image1.jpg" alt="">
+                <img id=image-2" class="slides" src="Images/product-image2.jpg" alt="">
+                <img id=image-3" class="slides" src="Images/product-image3.jpg" alt="">
+                <button class="left" onclick="prev(-1)">❮</button>  
+                <button class="right" onclick="next(1)">❯</button>  
+                
+            </div>
+            <div class="detailsBox Boxes">
+                <h2 id="item-name">Boys' Stillwater Sherpa 1/4-Zip</h2>
+                <div class="box-margin">
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star"></i></a>
+                    <a href=""><i class="fas fa-star-half-alt"></i></a>
+                    <span><b>28</b> Reviews</span>
+                </div>
+                <div class="box-margin">
+                    <h4  class="textColor1">FREE GROUND SHIPPING <span>on all orders over $125</span></h4>
+                </div>
+                <div class="box-margin">  
+                    <p>
+                        <a id="price" class="price textColor1" href="" >$48.99</a>
+                        <a class="price" href="">$48.99</a>
+                    </p>
+                    
+                </div>
+                <div id="pdtColorInfo" class="box-margin">
+                   
+                    <p><b>Color :</b><span>camel</span></p>
+                    <div id="showColor">
+                        <img src="Images/color.jpg" alt="">
+                    </div>
+                </div>
+              
+                <div class="box-margin">
+                    <p><b>Size :</b><span id="size">XL</span></p>
+                </div>
+                <div class="box-margin">
+                    <p><b>Qty :</b><span id="qty">0</span></p>
+                </div>
+
+
+                <div id="selectSizeBox" class="box-margin">
+                    <div id="size-1" class="size">S</div>
+                    <div id="size-2" class="size">M</div>
+                    <div id="size-3" class="size">L</div>
+                    <div id="size-4" class="size">ML</div>
+                    <div id="size-5" class="size">XL</div>
+                  
+                </div>
+
+               <div class="itemNoSelectBox box-margin" >
+                   <div id="reduce-no" class="item-increase"><span class="qty-btn"><i  class="fas fa-minus"></i></span></div>
+                   <div  class="item-no"><input id="quantity" type="text" value="1"></div>
+                   <div id="increase-no"  class="item-increase" > <span class="qty-btn" ><i class="fas fa-plus"></i></span></div>
+                  
+               </div>
+               <div id="addToCartBox" class="storeBox box-margin">
+                   <a>add to cart</a>
+               </div>
+                <div id="buyBox" class="storeBox box-margin">
+                   <a href="">Buy online, free in store pickup</a><br>
+                   <a href="">Get it today at a store near you</a>
+                </div>
+               <div id="pdtDelivery" class="box-margin payment">
+                   <p><span><i class="fas fa-cart-plus"></i><strong>Same Day Delivery</strong></p>
+                </div>
+
+                <div id="pdtPaymentOptions" class="box-margin">
+                  <p class="payment-accept payment">
+                      <img class="payment-accept-logo" src="Images/pay-paypal.png" alt="paypal">
+                      <img class="payment-accept-logo" src="Images/pay-amazon.png" alt="amazon">
+                      <img  class="payment-accept-logo" src="Images/pay-applepay.png" alt="apple">
+                  </p>
+                  <!-- <p class="after-paymsg payment">
+                      <span>or payments of $ 12.25 by</span>
+                      <span ><img class="afterpay-logo" src="Images/afterpay-image.svg" alt=""></span>
+                  </p>
+
+               
+                      <p class="paymentOptions-list box-margin payment" >
+                          <a href=""><i class="fas fa-gift"></i>Gift Options</a>
+                          <a href=""><i class="far fa-heart"></i>Add to Wishlist</a>
+                      </p>
+                  -->
+
+                </div>
+
+            </div>
+        </div>
+        <!-- CartBox -->
+         <div id="cartBox" >
+            <div id="cartBox-inner">
+                <div class="cart-heading"><p>Items added to Cart<span id="close-btn">&times</span></p></div>
+                <div class="cart-wrapper">
+                    <div class="cart-inner"><img id="cart-item-image" src="Images/product-image1.jpg" alt=""></div>
+                    <div class="cart-inner">
+                        <div class="box-margin">
+                            <h4  class="textColor1">Boys' Stillwater Sherpa 1/4-Zip</h4>
+                        </div>
+                        <div class=" cart-item-info box-margin">  
+                            <p class="box-margin">
+                                <span class="textColor1">$48.99</span> <span>$48.99</span>
+                            </p>
+    
+                            <p class="box-margin">
+                                <span  class="textColor1">Qty: </span> <span >1</span>
+                            </p>
+                            <p >
+                                <span class="textColor1">$391.92</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-total-wrapper">
+                    <div class="cart-total-inner"><p class="total">Cart Subtotal:<span id="cart-amount">$39.92</span></p></div>
+                      <div div class="progress-box"><div class="progress"></div></div>
+                    <p class="textColor1">You qualify for Free Shipping</p>
+                </div>
+    
+                <div id="checkout-box" class="storeBox box-margin">
+                    <a id="checkout" href="checkoutpage.html">checkout</a>
+                </div>
+                 <div id="continue-shop-box" class="storeBox box-margin">
+                    <a href="#">continue shopping</a>
+                 
+                 </div>
+            </div>
+           
+            
+        </div> 
+    </section>
+    <script src="jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script src="jquery-script.js"></script>
+
+ 
+</body>
+</html>
