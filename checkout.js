@@ -36,7 +36,12 @@ var productObject ={
 
 //put object into storage
 var storage = localStorage.getItem('product');
-console.log(storage);
+var unpackedItem;
+ $('checkout-box').on('click',()=>{
+   unpackedItem = JSON.parse(storage);
+   var realPrice =unpackedItem.price;
+   itemPrice = itemPrice.text(realPrice);
+ });
 
 
 
@@ -52,6 +57,8 @@ function calculatePrice(){
 function calculatTax(){
     return tax;
 }
+
+
 
 subtotal = calculatePrice();
 });

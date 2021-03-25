@@ -36,6 +36,7 @@
     var increase = document.querySelector('#increase-no');
     var reduce = document.querySelector('#reduce-no');
     var quantity = document.querySelector('#quantity');
+    
     var qty=0;
     quantity.value = 0;
     
@@ -45,6 +46,7 @@
             quantity.value = parseInt(quantity.value) + 1;
              qty = quantity.value;
             $('#qty').text(qty);
+            $('.qty').text(qty);
         }
     });
     
@@ -53,32 +55,32 @@
             quantity.value  = parseInt( quantity.value ) - 1;
              qty = quantity.value;
             $('#qty').text(qty);
+            $('.qty').text(qty);
+           
         } else {
             quantity.value = 0
              qty = quantity.value;
             $('#qty').text(qty);
+            $('.qty').text(qty);
+            
         }
    
     });
-   var size_1 = document.querySelectorAll('.size')[0].innerText;
-   var size_2 = document.querySelectorAll('.size')[1].innerText;
-   var size_3 = document.querySelectorAll('.size')[2].innerText;
-   var size_4 = document.querySelectorAll('.size')[3].innerText;
-   var size_5 = document.querySelectorAll('.size')[4].innerText;
+
     $('#size-1').on('click',()=>{
-       $('#size').text(size_1);
+       $('#size').text('Small');
     });
     $('#size-2').on('click',()=>{
-        $('#size').text(size_2);
+        $('#size').text('Medium');
      });
      $('#size-3').on('click',()=>{
-        $('#size').text(size_3);
+        $('#size').text('Large');
      });
      $('#size-4').on('click',()=>{
-        $('#size').text(size_4);
+        $('#size').text('Medium-large');
      });
      $('#size-5').on('click',()=>{
-        $('#size').text(size_5);
+        $('#size').text('Extra-large');
      });
 
      

@@ -1,6 +1,7 @@
 
 
 #mainContainer{
+    margin-top:50px;
     display:grid;
     grid-template-columns:3fr 1fr;
     column-gap:10px;
@@ -16,15 +17,25 @@
      display: grid;
      grid-template-columns:1fr 1fr;
      column-gap:30px;
-     /* margin-top:40px; */
+     margin-bottom:40px;
      padding:20px 0px;
      border:1px solid black;
      
 }
 
 .ship-address{
-    border:1px solid black;
+  
     margin-left:10px;
+    
+}
+
+form{
+   padding:10px;
+    border:1px solid black;
+    border-radius:5px;
+    width:350px;
+    margin-left:50px;
+    box-shadow:5px 0px 20px 0px #888888;
 }
 
 .form-grid{
@@ -63,21 +74,50 @@
 }
 
 .ship-options{
-    border:1px solid black;
+    
     margin-right:10px;
 }
 
 .ship-options-wrapper{
     margin:0 20px;
     
+   
+    
+}
+
+.so-wrapper{
+    border:1px solid black;
+    border-radius:5px;
+    padding:10px;
+    box-shadow:5px 0px 20px 0px #888888;
 }
 
 .si-head{
     text-align:center;
+    
+}
+
+.si-heading{
+    font-weight:bold;
+    font-size:18px;
+    padding-left:2px;
 }
 
 .so-inner{
-    border:1px solid black;
+  
+    margin-top: 15px;
+}
+
+
+.so-inner ul{
+  
+    margin-left: 22px;
+}
+
+.so-text{
+    padding-left:12px;
+    font-size:16px;
+
 }
 
 

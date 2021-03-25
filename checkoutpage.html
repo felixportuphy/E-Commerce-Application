@@ -5,15 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="checkout.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+    <section id="nav-bar">
+        <header id="nav-header">
+           <div id="home-logo">Quarsh</div>
+   
+           <!-- <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0"><img src="Images/cd-hamburger-menu.svg" alt=""></a></div> -->
+           <div id="cd-cart-trigger"><a class="cd-img-replace" href="#0"><img src="Images/cd-cart.svg" alt=""></a></div>
+        </header>
+   
+        <nav id="main-nav">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#0">About</a></li>
+               <li><a class="current" href="#0">Services</a></li>
+               <li><a href="#0">Gallery</a></li>
+               <li><a href="#0">Contact</a></li>
+              
+           </ul>
+            <div class="searchBox"><input type="search"><span id="search-btn"><i  class="fa fa-search"></i></span></div>
+        </nav>
+   
+       </section>
+
     <div class="mainCheckOutBox">
         <div class="orderSummaryBox">
             <div class="oshead-wrapper">
                 <div class="oshead-inner">
-                    <p>Order Summary<br> <span>1 item(s)</span></p>
+                    <p>Order Summary<br> <span><b class="qty">1</b>item(s)</span></p>
                    
                    
                 </div>
@@ -74,9 +98,9 @@
                     <div class="col-rowgrids">
                         <div id="co-item-name">Black Still water</div>
                         <div class="col-1-colgrids">
-                            <div id="co-item-style"><b>Style:</b>3K001154</div>
+                            <!-- <div id="co-item-style"><b>Style:</b>3K001154</div> -->
                             <div id="co-item-color"><b>Color:</b>Camel</div>
-                            <div id="co-item-size"><b>Size:</b>3T</div>
+                            <div id="co-item-size"><b>Size:</b><span id="size">Medium</span></div>
                         </div>
                        
                     </div>

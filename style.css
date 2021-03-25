@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -16,6 +17,15 @@
 #nav-bar{
     border:1px solid black;
     /* padding:0 0 10px 0; */
+}
+
+#home-logo{
+    font-weight:bold;
+    padding-left:20px;
+    padding-top:10px;
+    font-size:28px;
+    color:white;
+
 }
 
 #nav-header{
@@ -72,10 +82,17 @@
 .searchBox input{
    border:none;
    font-size:16px;
-   width:100%;
+   width:90%;
    height:auto;
    outline:none;
  
+}
+
+#search-btn{
+    font-size:18px;
+    color:orangered;
+    line-height:auto;
+    cursor:pointer;
 }
 
 
@@ -171,8 +188,19 @@
     margin-top: 20px;
 }
 
+.review{
+    color:gold;
+}
+
 .textColor1 {
     color: orangered;
+    font-size:18px;
+}
+
+.prev-price{
+    text-decoration:line-through;
+    font-size:18px;
+    padding-left:5px;
 }
 
 
@@ -349,6 +377,7 @@
     background-color: white;
     visibility: hidden;
     border:1px solid rgba(185, 184, 184, 0.897);
+    box-shadow:5px 0px 20px 0px #888888;
 }
 
 #close-btn{

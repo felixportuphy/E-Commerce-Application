@@ -7,13 +7,14 @@
     <title>Product Catalog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
    
 </head>
 <body>
    <section id="nav-bar">
      <header id="nav-header">
-		<div id="logo"><img src="Images/cd-logo.svg" alt="Homepage"></div>
+		<div id="home-logo">Quarsh</div>
 
 		<!-- <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0"><img src="Images/cd-hamburger-menu.svg" alt=""></a></div> -->
 		<div id="cd-cart-trigger"><a class="cd-img-replace" href="#0"><img src="Images/cd-cart.svg" alt=""></a></div>
@@ -21,14 +22,14 @@
 
 	 <nav id="main-nav">
 		<ul>
-			<li><a href="#0">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 			<li><a href="#0">About</a></li>
 			<li><a class="current" href="#0">Services</a></li>
 			<li><a href="#0">Gallery</a></li>
             <li><a href="#0">Contact</a></li>
            
         </ul>
-         <div class="searchBox"><input type="search"></div>
+         <div class="searchBox"><input type="search"><span id="search-btn"><i  class="fa fa-search"></i></span></div>
 	 </nav>
 
     </section>
@@ -71,20 +72,20 @@
             <div class="detailsBox Boxes">
                 <h2 id="item-name">Boys' Stillwater Sherpa 1/4-Zip</h2>
                 <div class="box-margin">
-                    <a href=""><i class="fas fa-star"></i></a>
-                    <a href=""><i class="fas fa-star"></i></a>
-                    <a href=""><i class="fas fa-star"></i></a>
-                    <a href=""><i class="fas fa-star"></i></a>
-                    <a href=""><i class="fas fa-star-half-alt"></i></a>
-                    <span><b>28</b> Reviews</span>
+                    <a class="review"><i class="fas fa-star"></i></a>
+                    <a class="review"><i class="fas fa-star"></i></a>
+                    <a class="review"><i class="fas fa-star"></i></a>
+                    <a class="review"><i class="fas fa-star"></i></a>
+                    <a class="review"><i class="fas fa-star-half-alt"></i></a>
+                    <span><b>100</b> Reviews</span>
                 </div>
                 <div class="box-margin">
-                    <h4  class="textColor1">FREE GROUND SHIPPING <span>on all orders over $125</span></h4>
+                    <h4  class="textColor1">Free Ground Shipping <span>on all orders over $125</span></h4>
                 </div>
                 <div class="box-margin">  
                     <p>
-                        <a id="price" class="price textColor1" href="" >$48.99</a>
-                        <a class="price" href="">$48.99</a>
+                        <span id="price" class="price textColor1" >$48.99</span>
+                        <span class="prev-price" class="price" >$48.99</span>
                     </p>
                     
                 </div>
@@ -97,7 +98,7 @@
                 </div>
               
                 <div class="box-margin">
-                    <p><b>Size :</b><span id="size">XL</span></p>
+                    <p><b>Size :</b><span id="size">Medium</span></p>
                 </div>
                 <div class="box-margin">
                     <p><b>Qty :</b><span id="qty">0</span></p>
@@ -164,14 +165,14 @@
                         </div>
                         <div class=" cart-item-info box-margin">  
                             <p class="box-margin">
-                                <span class="textColor1">$48.99</span> <span>$48.99</span>
+                                <span class="textColor1">$48.99</span> <span class="prev-price">$48.99</span>
                             </p>
     
                             <p class="box-margin">
-                                <span  class="textColor1">Qty: </span> <span >1</span>
+                                <span  class="textColor1">Qty: </span> <span class="qty" >1</span>
                             </p>
                             <p >
-                                <span class="textColor1">$391.92</span>
+                                <span class="textColor1">$210.92</span>
                             </p>
                             
                         </div>

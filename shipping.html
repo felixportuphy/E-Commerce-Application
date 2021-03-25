@@ -6,9 +6,31 @@
     <title>Shipment</title>
     <link rel="stylesheet" href="shipping.css">
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+     <section id="nav-bar">
+        <header id="nav-header">
+           <div id="home-logo">Quarsh</div>
+   
+           <!-- <div id="cd-hamburger-menu"><a class="cd-img-replace" href="#0"><img src="Images/cd-hamburger-menu.svg" alt=""></a></div> -->
+           <div id="cd-cart-trigger"><a class="cd-img-replace" href="#0"><img src="Images/cd-cart.svg" alt=""></a></div>
+        </header>
+   
+        <nav id="main-nav">
+           <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="#0">About</a></li>
+               <li><a class="current" href="#0">Services</a></li>
+               <li><a href="#0">Gallery</a></li>
+               <li><a href="#0">Contact</a></li>
+              
+           </ul>
+            <div class="searchBox"><input type="search"><span id="search-btn"><i  class="fa fa-search"></i></span></div>
+        </nav>
+   
+       </section>
+
     <div id="mainContainer">
       
         <div class="itemSummaryBox">
@@ -72,12 +94,12 @@
                             <label for="">STATE</label><br> 
                             <select class="s-input" name="" id="">
                                 <option value="">USA</option>
-                                <option value="">China</option>
-                                <option value="">Canada</option>
+                                <option value="">CHINA</option>
+                                <option value="">CANADA</option>
                                 <option value="">UAE</option>
-                                <option value="">Belgium</option>
+                                <option value="">BELGIUM</option>
                                 <option value="">UK</option>
-                                <option value="">Norway</option>
+                                <option value="">NORWAY</option>
                             </select>
                             <!-- <input class="s-input" type="text"> -->
                        </div>
@@ -105,35 +127,45 @@
               <div class="ship-options">
                  
                   <div class="ship-options-wrapper">
-                    <h1 class="si-head">Shipping Options</h1> 
-                    <div class="so-inner">
-                        <p><input type="radio"><span>Standards</span></p>
-                        <p>Here we go</p>
-                    </div>
-                    <div class="so-inner">
-                      <p><input type="radio"><span>Standards</span></p>
-                      <p>Here we go</p>
-                  </div>
-                  <div class="so-inner">
-                      <p><input type="radio"><span>Standards</span></p>
-                      <p>Here we go</p>
-                  </div>
-  
-                  <div class="so-inner">
-                     <ul>
-                         <li>Delivery excludes Saturday, Sunday, and Holidays</li>
-                         <li>Monday-Friday by 12 Noon ET will ship out same day</li>
-                         <li>Saturday-Sunday orders ship the following Monday</li>
-                         <li>Holidays ship the first business day after the holiday</li>
-                         <li>Please note that during periods of high volume, it will take longer 
-                             (sales, major promotions, Friends & Family, during the holidays, etc.)
-                          </li>
-                     </ul>
-                  </div>
-                  <div class="so-inner">
-                      <p>All order placement times are pending credit card verification.</p>
-                  </div>
-                  </div>
+                    <h1 class="si-head">Shipping Options</h1>
+                    <div class="so-wrapper">
+                        <div class="so-inner">
+                            <p><input type="radio"><span class="si-heading">Standard Ground: 8.50</span></p>
+                            <p class="so-text">Usually arrives 2-7 business days. Delivery excludes
+                                 Saturday,Sunday and Holidays.
+                            </p>
+                        </div>
+                        <div class="so-inner">
+                          <p><input type="radio"><span class="si-heading">UPS 2nd Day Air:18.50</span></p>
+                          <p class="so-text">
+                            please note that our shipping carriers are experiencing 
+                            covid-relatedd delays.
+                          </p>
+                      </div>
+                      <div class="so-inner">
+                          <p><input type="radio"><span class="si-heading">Next Day Air: 26.50</span></p>
+                          <p class="so-text">please note that our shipping carriers are experiencing 
+                              covid-relatedd delays.
+                          </p>
+                      </div>
+      
+                      <div class="so-inner">
+                         <ul>
+                             <li>Delivery excludes Saturday, Sunday, and Holidays</li>
+                             <li>Monday-Friday by 12 Noon ET will ship out same day</li>
+                             <li>Saturday-Sunday orders ship the following Monday</li>
+                             <li>Holidays ship the first business day after the holiday</li>
+                             <li>Please note that during periods of high volume, it will take longer 
+                                 (sales, major promotions, Friends & Family, during the holidays, etc.)
+                              </li>
+                         </ul>
+                      </div>
+                      <div class="so-inner">
+                          <p>All order placement times are pending credit card verification.</p>
+                      </div>
+                    </div> 
+                  
+                 </div>
 
                
               </div>
@@ -142,7 +174,7 @@
         <div class="orderSummaryBox">
             <div class="oshead-wrapper">
                 <div class="oshead-inner">
-                    <p>Order Summary<br> <span>1 item(s)</span></p>
+                    <p>Order Summary<br> <span><b class="qty">1</b>item(s)</span></p>
                    
                    
                 </div>
@@ -169,7 +201,7 @@
                
                
                 <p>or 4 payments of 12.25 by <span><img src="" alt=""></span></p>
-                <div class="applyBox">
+                <!-- <div class="applyBox">
                     <div class="promoCodeBox">
                         <input type="search" placeholder="Enter your promo code here">
                     </div>
@@ -182,11 +214,12 @@
                         <a href="checkoutpage.html">checkout</a>
                     </div>
     
-                </div>
+                </div> -->
                
             </div>
     
         </div>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
